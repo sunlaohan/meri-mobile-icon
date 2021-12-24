@@ -7,7 +7,7 @@
     "dist",
     "es"
   ],
-  "repository": "https://github.com/leadream/pud-vue-icon.git",
+  "repository": "https://github.com/noobmf/pud-vue-icon.git",
   "author": "Kiki",
   "scripts": {
     "generate": "sudo rm -rf src/icons && node bin/build.js",
