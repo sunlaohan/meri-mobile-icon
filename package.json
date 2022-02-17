@@ -1,6 +1,6 @@
 {
   "name": "pud-vue-icon",
-  "version": "0.0.9",
+  "version": "0.1.6",
   "description": "Pud Vue Icon, Automation workflow with Figma",
   "main": "bundle/index.common.js",
   "files": [
