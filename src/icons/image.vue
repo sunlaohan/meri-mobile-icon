@@ -8,7 +8,7 @@
   </template>
   <script>
     export default {
-      name: "IconImage",
+      name: "Icon-Image",
       props: {
         size: {
           type: Number,
