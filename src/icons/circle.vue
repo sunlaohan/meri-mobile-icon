@@ -8,7 +8,7 @@
   </template>
   <script>
     export default {
-      name: "Icon-Circle",
+      name: "IconCircle",
       props: {
         size: {
           type: Number,
