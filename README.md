@@ -1,4 +1,4 @@
-# pud-vue-icon
+# aim-vue-icon
 
 ## Project setup
 ```
