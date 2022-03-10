@@ -1,6 +1,6 @@
 {
-  "name": "aim-vue-icon",
-  "version": "0.2.3",
+  "name": "aim-icon",
+  "version": "0.2.4",
   "description": "Aim Vue Icon, Automation workflow with Figma",
   "main": "bundle/index.common.js",
   "files": [
