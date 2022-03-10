@@ -1,14 +1,14 @@
 <template>
   <div>
-    <h1 class="banner">Pud Vue Icon</h1>
+    <h1 class="banner">Aim Vue Icon</h1>
     <div class="code">
       <div>
         <h3>Installation</h3>
-        <pre><code>npm install Pud-vue-icon --save<br/>yarn add Pud-vue-icon</code></pre>
+        <pre><code>npm install Aim-vue-icon --save<br/>yarn add Aim-vue-icon</code></pre>
       </div>
       <div>
         <h3>Usage</h3>
-        <pre><code>import { IconHome } from 'Pud-vue-icon'<br/>&lt;IconHome :size="36" color="#009C22" &gt;</code></pre>
+        <pre><code>import { IconHome } from 'Aim-vue-icon'<br/>&lt;IconHome :size="36" color="#009C22" &gt;</code></pre>
       </div>
     </div>
   </div>
