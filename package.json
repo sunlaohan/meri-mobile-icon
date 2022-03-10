@@ -1,7 +1,7 @@
 {
-  "name": "aim-vue-icon",
+  "name": "pud-vue-icon",
   "version": "0.5.1",
-  "description": "Aim Vue Icon, Automation workflow with Figma",
+  "description": "Pud Vue Icon, Automation workflow with Figma",
   "main": "bundle/index.common.js",
   "files": [
     "dist",
