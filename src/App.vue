@@ -4,16 +4,17 @@
     <ul class="wrapper">
       <li
         class="item"
-        v-for="iconComponentName in iconNames"
-        :key="iconComponentName"
-        :title="iconComponentName"
-        @click="copyName(iconComponentName)"
+        v-for="icon in icons"
+        :key="icon.name"
+        :title="icon.name"
+        @click="copyName('Icon' + icon.name)"
       >
-        <component
+        <!-- <component
           :is="iconComponentName"
           :size="36"
-        />
-        <div>{{iconComponentName}}</div>
+        /> -->
+        <span v-html="icons['Icon' + icon.name]({size:36})"></span>
+        <div>{{'Icon' + icon.name}}</div>
       </li>
     </ul>
   </div>
@@ -30,8 +31,11 @@
     },
     data () {
       return {
-        iconNames: this.ICON_NAMES
+        icons: this.ICONS
       }
+    },
+    created(){
+        console.log(this.icons.IconCircle({size:36}))
     },
     methods: {
       copyName(name) {
