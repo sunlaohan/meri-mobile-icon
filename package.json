@@ -1,13 +1,13 @@
 {
   "name": "aim-vue-icon",
   "version": "0.2.2",
-  "description": "Pud Vue Icon, Automation workflow with Figma",
+  "description": "Aim Vue Icon, Automation workflow with Figma",
   "main": "bundle/index.common.js",
   "files": [
     "dist",
     "es"
   ],
-  "repository": "https://github.com/noobmf/pud-vue-icon.git",
+  "repository": "https://github.com/noobmf/aim-vue-icon.git",
   "scripts": {
     "generate": "sudo rm -rf src/icons && node bin/build.js",
     "serve": "vue-cli-service serve",
