@@ -35,7 +35,7 @@
       }
     },
     created(){
-        console.log(this.icons.IconCircle({size:36}))
+       
     },
     methods: {
       copyName(name) {
