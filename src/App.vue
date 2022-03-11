@@ -4,17 +4,17 @@
     <ul class="wrapper">
       <li
         class="item"
-        v-for="icon in icons"
-        :key="icon.name"
-        :title="icon.name"
-        @click="copyName('Icon' + icon.name)"
+        v-for="(icon,key) in icons"
+        :key="key"
+        :title="key"
+        @click="copyName(key)"
       >
         <!-- <component
           :is="iconComponentName"
           :size="36"
         /> -->
-        <span v-html="icons['Icon' + icon.name]({size:36})"></span>
-        <div>{{'Icon' + icon.name}}</div>
+        <span v-html="icon({size:36})"></span>
+        <div>{{key}}</div>
       </li>
     </ul>
   </div>
@@ -33,9 +33,6 @@
       return {
         icons: this.ICONS
       }
-    },
-    created(){
-       
     },
     methods: {
       copyName(name) {
