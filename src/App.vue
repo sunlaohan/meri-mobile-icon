@@ -1,97 +1,51 @@
 <template>
-  <div class="container">
-    <Banner/>
-    <ul class="wrapper">
-      <li
-        class="item"
-        v-for="(icon,key) in icons"
-        :key="key"
-        :title="key"
-        @click="copyName(key)"
-      >
-        <!-- <component
-          :is="iconComponentName"
-          :size="36"
-        /> -->
-        <span v-html="icon({size:36})"></span>
-        <div>{{key}}</div>
-      </li>
-    </ul>
+  <div>
+    <h1 class="banner">Aim Vue Icon</h1>
+    <div class="code">
+      <div>
+        <h3>Installation</h3>
+        <pre><code>npm install Aim-vue-icon --save<br/>yarn add Aim-vue-icon</code></pre>
+      </div>
+      <div>
+        <h3>Usage</h3>
+        <pre><code>import { IconHome } from 'Aim-vue-icon'<br/>&lt;span v-html="IconHome({size:36,color:'#009C22'})" &gt;</code></pre>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-  import 'normalize.css'
-  import Banner from './components/Banner'
-
   export default {
-    name: "App",
-    components: {
-      Banner
-    },
-    data () {
-      return {
-        icons: this.ICONS
-      }
-    },
-    methods: {
-      copyName(name) {
-        const input = document.createElement('input')
-        input.setAttribute('readonly', 'readonly')
-        input.setAttribute('value', name)
-        document.body.appendChild(input)
-        input.setSelectionRange(0, 9999)
-        input.select()
-        if (document.execCommand('copy')) {
-          document.execCommand('copy')
-        }
-        document.body.removeChild(input)
-        this.$message.success('复制成功')
-      }
-    }
+    name: "Banner"
   };
 </script>
 
 <style lang="css">
-  *{
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+  .banner{
+    padding-top: 30px;
+    text-align: center;
   }
-  body{
-    font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-    font-size: 16px;
-  }
-  .container {
-    font-family: "Avenir", Helvetica, Arial, sans-serif;
-    width: 100%;
-    max-width: 1200px;
+  .code{
+    display: flex;
+    justify-content: space-between;
     margin: 0 auto;
-    padding: 15px;
+    max-width: 720px;
   }
-  .wrapper {
-    list-style: none;
-    display: flex;
-    flex-flow: wrap;
-    margin: 0;
-    padding: 15px 0;
+  .code div{
+    width: 48%;
   }
-  .item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    height: 120px;
+  pre{
+    width: 100%;
     padding: 20px;
     border-radius: 6px;
-    cursor: pointer;
-    color: #486491;
-    transition: background-color 0.2s;
-  }
-  .item:hover{
+    color: #476391;
     background-color: #e7ecf3;
+    overflow: auto;
   }
-  .item svg{
-    margin-bottom: 12px;
+  h3{
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 10px 0;
   }
 </style>
