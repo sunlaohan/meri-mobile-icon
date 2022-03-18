@@ -8,7 +8,7 @@
       </div>
       <div>
         <h3>Usage</h3>
-        <pre><code>import { IconHome } from 'Aim-vue-icon'<br/>&lt;span v-html="IconHome({size:36,color:'#009C22'})" &gt;</code></pre>
+        <pre><code>import { IconHome } from 'Aim-vue-icon'<br/>&lt;span v-html="IconHome({size:36,color:'#009C22'})" /&gt;</code></pre>
       </div>
     </div>
   </div>
