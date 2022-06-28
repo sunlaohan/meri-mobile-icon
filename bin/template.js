@@ -55,8 +55,8 @@ const otherAttrToString = (svgOriginAttrs) => {
 }
 
 const getElementCode = (ComponentName, attrs, svgCode, svgOriginCode, svgOriginAttrs) => `
-    export default function ${ComponentName}(options){
-        if(!options || !options.color){
+    export default function ${ComponentName}(options={}){
+        if(options.origin){
             return '<svg  width="'+(options.size || 16) +'" height="'+(options.size || 16) +'" ${otherAttrToString(svgOriginAttrs)} viewBox="0 0 24 24">${svgOriginCode}</svg>'
         }
         return '<svg ${attrs}>${svgCode}</svg>'

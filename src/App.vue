@@ -13,7 +13,7 @@
           :is="iconComponentName"
           :size="36"
         /> -->
-        <span v-html="icon({size:36})"></span>
+        <span v-html="icon({size:36,origin:true})"></span>
         <div>{{key}}</div>
       </li>
     </ul>
