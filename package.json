@@ -7,7 +7,7 @@
     "dist",
     "es"
   ],
-  "repository": "https://github.com/noobmf/aim-vue-icon.git",
+  "repository": "https://sunlaohan.com/noobmf/meri-mobile-icon.git",
   "scripts": {
     "generate": "sudo rm -rf src/icons && node bin/build.js",
     "serve": "vue-cli-service serve",
