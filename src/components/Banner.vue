@@ -1,14 +1,14 @@
 <template>
   <div>
-    <h1 class="banner">Aim Vue Icon</h1>
+    <h1 class="banner">meri-mobile-icon</h1>
     <div class="code">
       <div>
         <h3>Installation</h3>
-        <pre><code>npm install Aim-vue-icon --save<br/>yarn add Aim-vue-icon</code></pre>
+        <pre><code>npm install meri-mobile-icon --save<br/>yarn add meri-mobile-icon</code></pre>
       </div>
       <div>
         <h3>Usage</h3>
-        <pre><code>import { IconHome } from 'Aim-vue-icon'<br/>&lt;span v-html="IconHome({size:36,color:'#009C22'})" /&gt;</code></pre>
+        <pre><code>import { IconHome } from 'meri-mobile-icon'<br/>&lt;span v-html="IconHome({size:36,color:'#009C22'})" /&gt;</code></pre>
       </div>
     </div>
     <h3 style="text-align:center">提示:传入参数 {origin:true}  使用svg 原有的颜色</h3>
