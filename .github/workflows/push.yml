@@ -46,4 +46,4 @@ jobs:
         content: |
           兄弟们，咱们的图标更新啦！
           请使用 yarn upgrade meri-mobile-icon --latest 更新。
-          在线查看图标：https://noobmf.github.io/meri-mobile-icon/
+          在线查看图标：https://sunlaohan.github.io/meri-mobile-icon/
